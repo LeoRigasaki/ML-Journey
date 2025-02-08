@@ -1,2 +1,2 @@
 # ML-Journey
-Where classic algorithms meet modern AI – no black boxes, just curiosity.
+This project documents my machine learning journey using real-world datasets and practical experiments from scratch.
