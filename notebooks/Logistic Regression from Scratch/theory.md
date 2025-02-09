@@ -24,18 +24,36 @@ Logistic regression is a supervised statistical technique to find the probabilit
 
 ## Types of Logistic Regression
 ### 1. Binary Logistic Regression
-- Only two possible outcomes/classes
-- Most common implementation
-- Example: Male/Female classification
+- Predicts between two possible outcomes (0/1, Yes/No, True/False)
+- Uses sigmoid function to output probability between 0 and 1
+- Most common implementation in real-world applications
+- Example applications:
+  * Email spam detection (Spam/Not Spam)
+  * Medical diagnosis (Disease Present/Absent)
+  * Customer churn prediction (Will Churn/Won't Churn)
 
 ### 2. Multinomial Logistic Regression
-- Three or more possible outcomes without ordering
+- Handles multiple classes without natural ordering
 - Uses softmax function instead of sigmoid
-- Example: Food quality prediction (Good/Great/Bad)
+- Predicts probability distribution across all classes
+- Example applications:
+  * Image classification (Cat/Dog/Bird)
+  * Document categorization (Sports/Politics/Technology)
+  * Product categorization (Electronics/Clothing/Books)
+- Mathematical formulation:
+  * P(y=k|x) = exp(θₖᵀx) / Σⱼexp(θⱼᵀx)
 
 ### 3. Ordinal Logistic Regression
-- Three or more possible outcomes with ordering
-- Example: Star ratings (1-5 stars)
+- Deals with ordered categorical outcomes
+- Maintains order relationship between classes
+- Uses cumulative probabilities
+- Example applications:
+  * Movie ratings (1 to 5 stars)
+* Education levels (Primary/Secondary/Higher)
+  * Customer satisfaction (Poor/Fair/Good/Excellent)
+- Special characteristics:
+  * Uses multiple thresholds/cutpoints
+  * Maintains proportional odds assumption
 
 ## Assumptions of Logistic Regression
 Unlike Linear Regression, Logistic Regression:
